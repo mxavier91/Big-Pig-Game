@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
-body {
-  background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url('https://source.unsplash.com/1600x1200/?boston,city');
+.image {
+  background: url('https://source.unsplash.com/1600x1200/?boston,city');
   background-size: cover;
   background-position: center;
   font-family: Lato;
@@ -40,6 +40,49 @@ body {
   float: left;
   height: 600px;
   padding: 100px;
+}
+
+/* TITLE SCREEN */
+
+#title-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  overflow: hidden;
+}
+
+.title-screen-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #eb4d4d;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background: #e33d3d;
+}
+
+.l-heading {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
 }
 
 /* PLAYERS */
